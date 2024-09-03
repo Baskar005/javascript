@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Event-Listener</title>
+</head>
+<body>
+    <button id="btn">click Me</button>
+    <p id="text"></p>
+    <script>
+
+        //Add-Event-Listener
+            //mouseover Event
+        let a=document.getElementById('btn');
+
+        a.addEventListener("mouseover",firstfunction);
+        function firstfunction(){
+            document.getElementById("text").innerHTML+="mouse hovered<br>";
+        }
+
+        //click Event
+        let b=document.getElementById('btn');
+        b.addEventListener("click",secondfunction);
+        function secondfunction(){
+            document.getElementById("text").innerHTML+="mouse clicked<br>";
+        }
+
+        //double click Event
+        let c=document.getElementById('btn');
+        c.addEventListener("dblclick",thirdfunction);
+        function thirdfunction(){
+            document.getElementById("text").innerHTML+="mouse double clicked<br>";
+        }
+
+        //mouse out Event
+        let d=document.getElementById('btn');
+        d.addEventListener("mouseout",fourthfunction);
+        function fourthfunction(){
+            document.getElementById("text").innerHTML+="mouse out<br>";
+        }
+
+        //Remove Event Listener
+        d.removeEventListener("mouseout",fourthfunction);
+    </script>
+</body>
+</html>

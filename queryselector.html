@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="boss">baskar</h1>
+    <button class="btn">click</button>
+
+    <script>
+        let a=document.querySelector("button")
+        a.addEventListener('click',func);
+        function func(){
+           document.querySelector('h1').innerHTML="Gilbert";
+        }
+
+       
+    </script>
+    <script>
+        let b = document.querySelector("button");
+        b.addEventListener('click', () => {
+            document.querySelector('h1').innerHTML = "Gilbert";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class parent{
+            constructor (name,age){
+                this.name = name;
+                this.age = age;
+            }
+            work(){
+                return `Hii This is ${this.name} My Age is ${this.age} `
+            }
+        }
+
+        const led =new parent("Baskar","21")
+        console.log(led.work())
+
+        class child1 extends parent {
+                constructor (name,age,location){
+                        super(name,age)
+                        this.location = location;
+                }
+
+               
+                
+                a(){
+                    return  `Hello ${this.name} My Age is ${this.age} And My Location's is ${this.location}` 
+                }
+
+
+        }
+        const get1 = new child1("Morris",35,"Trichy")
+            console.log(get1.a())
+            console.log(get1.b())
+           
+    </script>
+</body>
+</html>

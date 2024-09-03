@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope's</title>
+</head>
+<body>
+    <script>
+
+        // Global Scope's
+        const name="baskar KS";
+
+        console.log(name)
+
+        // Local Scope's
+
+        const nam="baskar KS";
+
+        function hostt(){
+          const  nam= "This is local Scope's"
+            console.log(nam);
+        }
+        console.log(nam)
+        hostt()
+
+        //Block Scope's
+
+        const names="ks";
+
+        function hot(){
+            const names="this is local scope's";
+            
+            if(true){
+                const names="This is Block Scope's";
+                console.log(names);
+            }
+            console.log(names);
+        }
+
+        console.log(names); //Global Scope's Output
+        hot();
+    </script>
+</body>
+</html>

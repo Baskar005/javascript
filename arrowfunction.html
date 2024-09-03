@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow-Function</title>
+</head>
+<body>
+    <script>
+        //Normal function
+
+        function fun(){
+            console.log("hii")
+        }
+
+        fun();
+
+        //Either Or
+
+        (function fun(){
+            console.log("Hello")
+        })
+
+        ()
+
+        //anaymaous function
+
+        const arr=function func(){
+            console.log("Baskar")
+        }
+
+        arr()
+
+        //Arrow Function
+
+        //syntax
+
+        // ()=>{
+
+        // }
+
+        const d=()=>{
+             "Hello";
+        }
+
+        console.log(d());
+
+        const single = x=> x*2;
+
+        console.log(single(7));
+
+        //using Object
+
+        const person={
+            firstname:"morris",
+            lastname:"gilbert",
+            getfullname:()=>{
+                return person.firstname +" "+person.lastname;
+            }
+        }
+
+        console.log(person.firstname)
+
+        console.log(person.getfullname())
+
+
+        const number=[1,2,3,4,5,6];
+
+       const h=number.map((numb)=>{
+            return numb * 5;
+        })
+
+        console.log(h)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Method</title>
+</head>
+<body>
+    <script>
+        //Array Method's
+
+        //Push Method
+
+        let a=new Array(2,4,6,8,10);
+        a.push(12);
+        console.log(a);
+
+        //Unshift Method
+
+        let b=new Array(2,4,6,8,10);
+        b.unshift(3);
+        console.log(b);
+
+        //shift Method
+
+        let c=new Array(2,4,6,8,10);
+        c.unshift();
+        console.log(c);
+
+        //Pop Method
+
+        let d=new Array(2,4,6,8,10);
+        d.pop();
+        console.log(d);
+
+        //Indexof Method
+        
+        let e=new Array(2,4,6,8,10);
+        console.log(e.indexOf(2));
+
+        //Foreach Method
+
+        let fore=new Array(2,4,6,8,0);
+        fore.forEach(function(ele){
+            console.log(ele*2)
+        })
+
+        //Map Method
+
+        let veg=["potato","tomato","onion","brinjal"];
+
+       let y= veg.map(function(elem){
+            return elem + "'s"
+        });
+        console.log(y);
+
+        //Filter Method
+
+        let fil=[2,4,6,8,10,12,14,16,18,20];
+         let fills = fil.filter(function(eleme){
+            return eleme > 5;
+         })
+         console.log(fills)
+
+         //Filter Method 
+         let creature= [{name:"lion", nature:"wild animal"},{name:"tiger",nature:"wild animal"},{name:"tiger",nature:"wild animal"},{name:"dog",nature:"domestic animal"},{name:"cat",nature:"domestic animal"},];
+
+         let m= creature.filter(function(creatures){
+            return creatures.nature=="domestic animal";
+         })
+         console.log(m)
+
+         //Scile Method
+
+         let num=[5,10,15,20,25,30,35,40,45,50];
+         let nums=num.slice(0,7);
+         console.log(nums);
+
+
+         //Splice Method
+
+         let numm=[5,10,15,20,25,30,35,40,45,50];
+         let numms=numm.splice(0,7)
+         console.log(numms)
+    </script>
+</body>
+</html>

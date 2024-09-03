@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This_Keyword</title>
+</head>
+<body>
+    <script>
+        //  let name="Baskar";
+        //   function func(name,address){
+        //       //this.name = name;
+        //      // this.address = address;
+        //       console.log(this.name);
+        //       console.log(this.address);
+              
+              
+        //      //console.log(name);    
+        //   }
+        //   func("Baskar","Pudukkottai");
+  
+         //let obj =new func("Baskar","Pudukkottai"); 
+  
+  
+    //   let info = {
+    //       name: "Baskar",
+    //       role:"Developer",
+    //       address:"Pudukkottai",
+          
+    //       getinfo(){
+    //           console.log(this.name);
+    //           console.log(this.role);
+    //           console.log(this.address);
+              
+    //       },
+  
+    //       getobj(){
+    //           console.log(this);
+    //       }
+    //   }
+      //  console.log(info)
+    //  info.getinfo();
+     //  info.getobj();
+  
+      let myshop = {
+          name: "BaskarInfoTech",
+          product:["Mobiles","laptops","Moniters","tabs"],
+          showproducts(){
+              this.product.forEach(function(myproduct){
+                      console.log(this.name,"-",myproduct);
+              },this);
+          }
+      }
+          myshop.showproducts();
+      </script>
+</body>
+</html>

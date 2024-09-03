@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish-Coalesing-Operator</title>
+</head>
+<body>
+    <script>
+
+       // Nullish-Coalesing-Opertor
+
+    //    // Undefined
+        let res; 
+        console.log(res);
+        if(res==undefined){
+            res="Baskar";
+        }
+        console.log(res);
+
+
+        // Null
+        let rest = '';
+        console.log(rest);
+        if(rest==null){
+            rest="Baskar";
+        }
+        console.log(rest);
+
+        // Using Nullish-Coalesing-Operator
+
+        let result="Baskar";
+        result=result ?? 3+2;
+        console.log(result);
+    </script>
+</body>
+</html>
